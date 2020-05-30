@@ -283,7 +283,10 @@ section {
     padding: 15px;
     align-items: flex-end;
     position: absolute;
-    linear-gradient(rgba(252, 225, 56, 0.3), 70%);
+
+/* i dont understand why this doesnt work */
+
+    linear-gradient(rgba(252, 225, 56, 0.3, 70%));
   }
 .trainer-img::after {
     content: "";
@@ -296,12 +299,12 @@ section {
 }
 .trainer-img h3 {
     position: relative;
-    z-index: 999;
+    z-index: 10;
   }
     
 .trainer-img h4 {
      position: relative;
-    z-index: 999;
+    z-index: 10;
   }
 .trainer-1 {
     background-image: url("/assets/images/trainer-1.jpg");
